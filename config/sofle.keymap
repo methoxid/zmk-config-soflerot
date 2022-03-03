@@ -11,8 +11,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-
-
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -22,7 +20,7 @@
 // |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   -   |
 // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   | BKSPC |
 // | GRAVE |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
-// | SHIFT |  Z  |  X  |  C   |  V   |  B   |  MUTE  |  | END   |  N   |  M    |  ,    |  .   |   /   | SHIFT |
+// | SHIFT |  Z  |  X  |  C   |  V   |  B   |  HOME  |  | END   |  N   |  M    |  ,    |  .   |   /   | SHIFT |
 //               | GUI | CTRL | ALT  | LOWER|  SPACE |  | ENTER | RAISE| CTRL  | ALT   | GUI  |
             bindings = <
 &kp ESC   &kp N1 &kp N2   &kp N3   &kp N4    &kp N5                      &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &kp MINUS
@@ -59,14 +57,14 @@
 // |BTCLR| BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |      |      |       |      |       |       |
 // |     | INS  | PSCR | GUI   |       |      |                | PGUP |      |   ^   |      |       |  DEL  |
 // |CAPS | ALT  | CTRL | SHIFT |       | CAPS |                | PGDN |   <- |   v   |  ->  |  DEL  | BKSPC |
-// |     | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      |      |       |      |       |       |
+// |     | UNDO | CUT  | COPY  | PASTE |      |      |  | HOME |      |      |       |      |       |       |
 //              |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
 &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4             &trans    &trans    &trans   &trans    &trans  &trans
 &trans     &kp INS      &kp PSCRN    &kp K_CMENU  &trans       &trans                   &kp PG_UP &trans    &kp UP   &trans    &kp N0  &kp DEL
 &kp CLCK   &kp LALT     &kp LCTRL    &kp LSHFT    &trans       &kp CLCK                 &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &kp DEL &kp BSPC
-&trans     &kp K_UNDO   &kp K_CUT    &kp K_COPY   &kp K_PASTE  &trans  &trans   &trans  &trans    &trans    &trans   &trans    &trans  &trans
-                        &trans       &trans       &trans       &trans  &trans   &trans  &trans    &trans    &trans   &trans
+&trans     &kp K_UNDO   &kp K_CUT    &kp K_COPY   &kp K_PASTE  &trans  &trans  &kp HOME &trans    &trans    &trans   &trans    &trans  &trans
+                        &trans       &trans       &trans       &trans  &trans  &trans   &trans    &trans    &trans   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp PG_UP PG_DN>;
