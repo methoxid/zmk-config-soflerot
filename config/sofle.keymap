@@ -30,7 +30,7 @@
                  &kp LGUI &kp LCTRL &kp LALT &mo 1  &kp SPACE  &kp RET   &mo 2  &kp RCTRL &kp RALT  &kp RGUI
             >;
 
-            sensor-bindings = <&inc_dec_kp A B &inc_dec_kp C D>;
+            sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp UP DOWN>;
         };
 
         lower_layer {
@@ -54,7 +54,7 @@
 
         raise_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |BTCLR| BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |      |      |       |      |       |       |
+// |BTCLR| BT0  | BT1  |  BT2  |  BT3  |  BT4 |                |      |      |       |      |       |       |
 // |     | INS  | PSCR | GUI   |       |      |                | PGUP |      |   ^   |      |       |  DEL  |
 // |CAPS | ALT  | CTRL | SHIFT |       | CAPS |                | PGDN |   <- |   v   |  ->  |  DEL  | BKSPC |
 // |     | UNDO | CUT  | COPY  | PASTE |      |      |  | HOME |      |      |       |      |       |       |
