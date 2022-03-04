@@ -72,3 +72,9 @@
         };
     };
 };
+
+
+//&out OUT_USB
+//&out OUT_BLE
+//&out OUT_TOG
+//https://zmk.dev/docs/behaviors/outputs/
