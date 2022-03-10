@@ -45,8 +45,8 @@
 
 &kp ESC   &kp N1 &kp N2   &kp N3   &kp N4    &kp N5                          &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &kp MINUS            
 &kp TAB   &as LS(Q) Q &as LS(W) W &as LS(E) E &as LS(R) R &as LS(T) T                  &as LS(Y) Y &as LS(U) U &as LS(I) I &as LS(O) O &as LS(P) P    &kp BSPC
-&kp GRAVE &kp A  &kp S    &kp D    &kp F     &kp G                           &kp H  &kp J     &kp K     &kp L    &kp SEMI &kp SQT
-&sk LSHFT &kp Z  &kp X    &kp C    &kp V     &kp B  &kp HOME        &kp END  &kp N  &kp M     &kp COMMA &kp DOT  &kp FSLH &sk RSHFT
+&kp GRAVE &as LS(A) A &as LS(S) S &as LS(D) D &as LS(F) F &as LS(G) G                  &as LS(H) H &as LS(J) J &as LS(K) K &as LS(L) L    &kp SEMI &kp SQT
+&sk LSHFT &as LS(Z) Z &as LS(X) X &as LS(C) C &as LS(V) V &as LS(B) B  &kp HOME        &kp END  &as LS(N) N &as LS(M) M     &kp COMMA &kp DOT  &kp FSLH &sk RSHFT
                  &kp LGUI &kp LCTRL &kp LALT &mo 1  &mt LGUI SPACE  &lt 2 RET  &mo 2  &kp RCTRL &kp RALT  &kp RGUI
 
 
